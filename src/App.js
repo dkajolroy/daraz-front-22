@@ -1,4 +1,3 @@
-
 import Home from './Pages/Home';
 import ViewProduct from './Pages/ViewProduct';
 import Profile from './Pages/Profile';
@@ -7,6 +6,8 @@ import Empty from './Pages/Empty';
 import Sign from './Pages/Sign';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
+
+
   return (
     <BrowserRouter >
       <Routes>
