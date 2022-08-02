@@ -7,15 +7,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 .not_found_page {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* All Page Custom */
+.home__section__container,
+.not_found_page,
+.profile_container_area,
+.view_product__container,
+.auth_user_container,
+.cart_container_area {
+  min-height: 70vh;
 }

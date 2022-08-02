@@ -1,0 +1,27 @@
+.category_menu_compo_x {
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: coral;
+}
+
+.carousel_slider_compo_x {
+    height: 100%;
+    background-color: crimson;
+}
+
+.category_menu_area li {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 4px;
+    border-bottom: 1px solid gray;
+}
+
+.category_menu_area li:last-child {
+    border: none;
+}
+
+.category_menu_area li:hover {
+    background: gray;
+    border-radius: 3px;
+}

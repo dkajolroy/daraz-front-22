@@ -2,8 +2,8 @@ import React from 'react'
 
 function MainNav() {
     return (
-        <div>
-            <h2>This is Main Nav</h2>
+        <div className="main_nav_area">
+            <center><h4>This is Main Nav</h4></center>
         </div>
     )
 }

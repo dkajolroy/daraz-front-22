@@ -1,9 +1,12 @@
 import React from 'react'
+import AllProduct from '../Components/Home/AllProduct'
+import HeroSection from '../Components/Home/HeroSection'
 
 function Home() {
     return (
-        <div>
-            <h2>This is Home</h2>
+        <div className='home__section__container'>
+            <HeroSection />
+            <AllProduct />
         </div>
     )
 }
