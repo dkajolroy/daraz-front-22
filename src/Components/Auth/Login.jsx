@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import React from 'react';
 
 const Login = () => {
     return (
-        <div>
-            Login
+        <div className='login_component'>
+            <center><h2>Login</h2></center>
         </div>
     );
 }

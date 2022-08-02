@@ -3,7 +3,7 @@ import React from 'react'
 export default function Register() {
     return (
         <div>
-            Login
+            <center><h2>Register</h2></center>
         </div>
     )
 }

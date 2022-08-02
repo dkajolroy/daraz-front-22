@@ -5,14 +5,7 @@ const TopNav = () => {
     return (
         <div className='top_nav_area'>
             <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <span>Email: admin@daraz.com</span>
-                    </div>
-                    <div className="col">
-                        <span>social: icon</span>
-                    </div>
-                </div>
+                <center><h6>This is Top nav</h6></center>
             </div>
         </div>
     );
