@@ -1,6 +1,6 @@
 import React from 'react'
-import CategoryMenu from '../Common/CategoryMenu'
-import Carousel from './../Common/Carousel';
+import CategoryMenu from '../HeroSection/CategoryMenu'
+import Carousel from './../HeroSection/Carousel';
 import './home.css'
 
 export default function HeroSection() {
