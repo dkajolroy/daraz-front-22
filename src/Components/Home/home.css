@@ -1,8 +1,13 @@
+.hero_section_area {
+    background: #FFF2EC;
+}
+
 .category_menu_compo_x {
     height: 100%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: coral;
+    background-color: #FFF;
+    border: 1px solid gray;
 }
 
 .carousel_slider_compo_x {

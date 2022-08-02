@@ -12,7 +12,7 @@ export default function HeroSection() {
                         <div className="col-3 d-lg-block d-none category_menu_compo_x">
                             <CategoryMenu />
                         </div>
-                        <div className="col-lg-9 carousel_slider_compo_x">
+                        <div className="col-lg-9 carousel_slider_compo_x h-auto">
                             <Carousel />
                         </div>
                     </div>
