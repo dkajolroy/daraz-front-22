@@ -1,0 +1,11 @@
+.social-icon{
+    transition: 0.5s;
+}
+
+.social-icon:hover{
+    background:orangered!important;
+    transform: rotate(360deg);
+    color: white;
+}
+
+

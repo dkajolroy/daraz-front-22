@@ -1,0 +1,59 @@
+.main_nav_area{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mainLogo{
+   width: 150px;
+    height: 100px;
+    display: block;
+}
+.search-box{
+    position: relative;
+}
+
+.search-box input[type='text']{
+    padding-top: 10px;
+    padding-bottom: 10px;
+       border-radius: 8px;
+       padding-left: 10px;
+       border: 1px solid lightcoral;
+}
+
+.search-btn{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.btn-search{
+    background: orange;
+     padding: 15px;
+    display: block;
+    color: white;
+    cursor: pointer;
+     border-radius: 0px 8px 8px 0px;
+
+}
+
+
+/* Responsive  */
+
+@media only screen and (max-width: 991px) {
+  .downloadApp{
+        display: none;
+    }
+
+    .mainLogo{
+        margin:15px auto;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+ 
+    .mainLogo{
+        margin:15px auto;
+    }
+}

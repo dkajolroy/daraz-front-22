@@ -1,5 +1,5 @@
 .footer_area_compo_xx {
-    background: #8d8e9d;
+    /* background: #8d8e9d; */
     padding-top: 50px;
 }
 
@@ -8,4 +8,19 @@
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
+}
+.menu2{
+    padding: 0;
+}
+.menu2 li{
+    text-transform: capitalize;
+    transition: 0.5s;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.menu2 li:hover{
+  padding-left: 10px;
+  cursor: pointer;
+    color: orange! important;
 }
