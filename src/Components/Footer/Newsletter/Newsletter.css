@@ -1,0 +1,43 @@
+.news_feed{
+    background: #232F3E;
+}
+
+
+.input-box {
+     position: relative;
+}
+
+
+.input-box input[type='email']{
+    position: relative;
+}
+
+
+.input-box input[type='submit']{
+    content:"";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.social-media ul li a{
+    transition: 0.5s;
+}
+
+.social-media ul li a:hover{
+    color: orange! important;
+}
+
+
+/* Reponsive  */
+
+@media all and(max-width: 452px){
+    .social-content{
+       flex-direction: column! important;
+    }
+
+    .social-content ul li a{
+    margin-top: 10px;
+    display: block;
+    }
+}
