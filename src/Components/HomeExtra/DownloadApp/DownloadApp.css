@@ -1,0 +1,41 @@
+.download-section{
+    background: #232F3E;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.down-menu h6{
+    color: white;
+    font-size: 20px;
+}
+.down-menu ul li a{
+    transition: 0.5s;
+    color: lightgray;
+    font-size: 13px;
+}
+.down-menu ul li a:hover{
+    padding-left: 10px;
+    color: orangered!important;
+}
+
+.scanLogo{
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+.logoap{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.downTitle{
+    font-size: 14px;
+    color: lightgray;
+    margin-top: 10px;
+}
+
+.downAll{
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
