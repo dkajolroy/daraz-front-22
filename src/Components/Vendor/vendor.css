@@ -100,6 +100,14 @@
 
 .login__by_vendor .login-form-button {
     width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form-button .anticon {
+    display: flex;
+    font-size: 18px;
+    padding: 2px;
 }
 
 .login__by_vendor a {

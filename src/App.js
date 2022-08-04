@@ -21,9 +21,10 @@ import Setting from './Components/Vendor/Setting';
 import { useState } from 'react';
 import VLogin from './Components/Vendor/Auth/VLogin';
 import VSignUp from './Components/Vendor/Auth/VSignUp';
+import { useSelector } from 'react-redux';
 function App() {
 
-  const [authVendor, setAuthVendor] = useState(false)
+  const { vendor } = useSelector(x => x.vendorAuth)
 
   return (
     <div className="container-fluid gx-0">
@@ -34,7 +35,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/auth" element={<Sign />} />
-          <Route path="/vendor" element={authVendor ? <Dashboard /> : <VLogin />} />
+          <Route path="/vendor" element={vendor ? <Dashboard /> : <VLogin />} />
           <Route path="/vendor/sign_up" element={<VSignUp />} />
           <Route path="/vendor/products" element={<Products />} />
           <Route path="/vendor/add-product" element={<AddProduct />} />

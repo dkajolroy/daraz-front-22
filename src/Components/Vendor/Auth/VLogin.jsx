@@ -1,17 +1,37 @@
 import React from 'react'
+import { Toaster } from 'react-hot-toast';
 import '../vendor.css'
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
+import { useDispatch } from "react-redux"
+import { vendorLoginAction } from './../../../Redux/Actions/vendorAction';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { API_URI } from './../../../config';
 
 export default function VLogin() {
-    const onFinish = (values) => {
-        console.log(values);
+    const dispatch = useDispatch()
+    const navigate = useNavigate
+
+    // Login Vendor
+    const [loading, setLoading] = useState(false);
+    const onFinish = async (values) => {
+        setLoading(true)
+        await dispatch(vendorLoginAction(values))
+        setLoading(false)
+        // navigate(`${API_URI}/vendor`)
     };
 
     return (
         <div className="login__admin_only__without_register">
             <div className="form_box_of_vendor col-md-6">
                 <div className='login__by_vendor col-md-6'>
+                    <Toaster
+                        position="top-center"
+                        reverseOrder={false}
+                        gutter={8}
+
+                    />
                     <Form
                         name="normal_login"
                         className="login-form"
@@ -60,7 +80,7 @@ export default function VLogin() {
                         </Form.Item>
 
                         <Form.Item>
-                            <Button type="primary" htmlType="submit" className="login-form-button">
+                            <Button type="primary" loading={loading} htmlType="submit" className="login-form-button">
                                 Log in
                             </Button>
                             Or <a href="">register now!</a>
