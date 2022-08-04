@@ -6,12 +6,9 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import { useDispatch } from "react-redux"
 import { vendorLoginAction } from './../../../Redux/Actions/vendorAction';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { API_URI } from './../../../config';
 
 export default function VLogin() {
     const dispatch = useDispatch()
-    const navigate = useNavigate
 
     // Login Vendor
     const [loading, setLoading] = useState(false);
@@ -19,7 +16,6 @@ export default function VLogin() {
         setLoading(true)
         await dispatch(vendorLoginAction(values))
         setLoading(false)
-        // navigate(`${API_URI}/vendor`)
     };
 
     return (
