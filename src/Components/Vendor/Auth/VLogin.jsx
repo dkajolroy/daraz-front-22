@@ -1,4 +1,5 @@
 import React from 'react'
+import '../vendor.css'
 
 export default function Login() {
     return (
