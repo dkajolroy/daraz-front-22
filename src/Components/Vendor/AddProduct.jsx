@@ -54,9 +54,9 @@ export default function AddProduct() {
                                 <div className="input_items">
                                     <ImgCrop rotate>
                                         <Upload
-                                            action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
                                             listType="picture-card"
                                             fileList={fileList}
+                                            onDrop={true}
                                             onChange={onChange}
                                             onPreview={onPreview}
                                         >

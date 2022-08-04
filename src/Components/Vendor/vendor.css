@@ -62,3 +62,66 @@
     width: 40px;
     object-fit: cover;
 }
+
+.login__admin_only__without_register,
+.register_vendor_without_register {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__by_vendor {
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 5px;
+}
+
+.ant-form-item {
+    margin: 0 !important;
+}
+
+.ant-form-item:first-child {
+    margin-bottom: 20px !important;
+}
+
+/* Sign In */
+
+
+
+.login__by_vendor .login-form-forgot {
+    float: right;
+}
+
+.login__by_vendor .ant-col-rtl .login-form-forgot {
+    float: left;
+}
+
+.login__by_vendor .login-form-button {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form-button .anticon {
+    display: flex;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.login__by_vendor a {
+    text-decoration: none;
+}
+
+.login__by_vendor a:hover {
+    text-decoration: underline;
+}
+
+.site-form-item-icon {
+    color: gray;
+}
+
+.register_vendor_without_register .ant-form-item {
+    margin-bottom: 10px !important;
+}

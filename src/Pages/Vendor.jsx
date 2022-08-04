@@ -15,13 +15,22 @@ import {
     LogoutOutlined,
     SafetyCertificateOutlined
 } from '@ant-design/icons';
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { Layout, Menu } from 'antd';
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { logOutAction } from '../Redux/Actions/vendorAction';
 const { Header, Sider, Content } = Layout;
 
 const Vendor = ({ children }) => {
     const [collapsed, setCollapsed] = useState(false);
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const logOut = () => {
+        dispatch(logOutAction())
+        navigate('/')
+    }
     return (
         <Layout>
             <Sider
@@ -71,7 +80,7 @@ const Vendor = ({ children }) => {
                     <Menu.Item key='/vendor/setting' icon={<SettingOutlined />}>
                         <Link to={'/vendor/setting'}>Setting</Link>
                     </Menu.Item>
-                    <Menu.Item key='' icon={<LogoutOutlined />}>
+                    <Menu.Item onClick={logOut} key='' icon={<LogoutOutlined />}>
                         <div className="logout_menu_items">
                             <span>Logout</span>
                         </div>
